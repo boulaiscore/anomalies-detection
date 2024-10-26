@@ -3,6 +3,7 @@ from prophet import Prophet
 import pandas as pd
 import os
 import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
 
 app = Flask(__name__)
 
@@ -25,7 +26,7 @@ def upload_file():
         file.save(file_path)
         return jsonify({"message": "File uploaded successfully", "file_path": file_path}), 200
 
-# Endpoint to get column names from the uploaded Excel file
+# Endpoint per ottenere i nomi delle colonne dal file Excel caricato
 @app.route('/get_columns', methods=['POST'])
 def get_columns():
     data = request.json
@@ -34,7 +35,7 @@ def get_columns():
     if not file_path:
         return jsonify({"error": "No file path provided"}), 400
 
-    # Load the file and extract column names
+    # Carica il file ed estrae i nomi delle colonne
     df = pd.read_excel(file_path)
     columns = df.columns.tolist()
     
@@ -71,8 +72,6 @@ def detect_anomalies_with_prophet(file_path, metric_col='y', date_col='ds'):
     plot_anomalies(merged, anomalies)
 
     return anomalies
-
-import matplotlib.dates as mdates
 
 # Funzione per visualizzare anomalie con una migliore rappresentazione grafica
 def plot_anomalies(forecast, anomalies):
@@ -120,4 +119,3 @@ def detect_time_series_anomalies():
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)
-
