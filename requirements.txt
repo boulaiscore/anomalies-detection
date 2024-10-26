@@ -162,7 +162,6 @@ preshed
 prompt_toolkit
 prophet
 proto-plus
-protobuf
 psutil
 pure_eval
 purl
