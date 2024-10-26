@@ -162,6 +162,7 @@ preshed
 prompt_toolkit
 prophet
 proto-plus
+protobuf>=3.19.6, <4.21.6
 psutil
 pure_eval
 purl
@@ -230,7 +231,6 @@ sqlitedict
 sqlparse
 srsly
 stack-data
-stanfordnlp
 stanio
 statsmodels
 sympy
@@ -238,7 +238,7 @@ tabulate
 tenacity
 tensorboard
 tensorboard-data-server
-tensorflow
+tensorflow-cpu
 tensorflow-io-gcs-filesystem
 termcolor
 terminaltables
