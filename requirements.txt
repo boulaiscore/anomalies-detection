@@ -53,8 +53,6 @@ Django
 docopt
 docutils
 editdistance
-en-core-web-md @ https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.7.1/en_core_web_md-3.7.1-py3-none-any.whl#sha256=6a0f857a2b4d219c6fa17d455f82430b365bf53171a2d919b9376e5dc9be032e
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
 et-xmlfile
 exceptiongroup
 executing
@@ -68,7 +66,7 @@ free-proxy
 frozenlist
 fsspec
 ftfy
-gast
+gast==0.4.0   # Versione compatibile con tensorflow
 gdown
 gensim
 geographiclib
@@ -112,7 +110,7 @@ Jinja2
 jmespath
 joblib
 jsonpickle
-keras
+keras==2.10.0  # Compatibile con tensorflow 2.10.0
 keyboard
 kiwisolver
 langcodes
@@ -141,9 +139,7 @@ numpy
 oauth2client
 oauthlib
 openai
-openalexapi
 opencv-python
-OpenHowNet
 openpyxl
 opt-einsum
 outcome
@@ -162,18 +158,13 @@ preshed
 prompt_toolkit
 prophet
 proto-plus
-protobuf>=3.19.6, <4.21.6
+protobuf>=3.19.5, <4.21.6   # Gamma compatibile con altre dipendenze
 psutil
 pure_eval
 purl
 pyarrow
-pyarrow-hotfix
-pyasn1
-pyasn1-modules
-PyAudio
 pycparser
 pydantic
-pydantic_core
 Pygments
 pygsheets
 PyJWT
@@ -181,7 +172,6 @@ PyMuPDF
 pyparsing
 pypdf
 PyPDF2
-pypdfium2
 PySocks
 pytesseract
 python-dateutil
@@ -231,14 +221,14 @@ sqlitedict
 sqlparse
 srsly
 stack-data
+stanfordnlp
 stanio
 statsmodels
 sympy
 tabulate
 tenacity
 tensorboard
-tensorboard-data-server
-tensorflow-cpu
+tensorflow==2.10.0   # Usa versione specifica per compatibilità
 tensorflow-io-gcs-filesystem
 termcolor
 terminaltables
@@ -250,7 +240,6 @@ tomli
 torch
 tqdm
 traitlets
-transformer-smaller-training-vocab
 transformers
 trio
 trio-websocket
