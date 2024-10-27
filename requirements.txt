@@ -11,3 +11,4 @@ openpyxl
 gunicorn==20.1.0
 plotly
 gunicorn
+statsmodels
