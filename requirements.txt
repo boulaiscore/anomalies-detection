@@ -8,3 +8,4 @@ google-cloud-language==2.12.0
 protobuf==3.19.6
 matplotlib
 openpyxl
+gunicorn==20.1.0
