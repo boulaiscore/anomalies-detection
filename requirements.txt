@@ -1,5 +1,5 @@
 Flask
-tensorflow==2.11.0  # Use this specific version for protobuf compatibility
+tensorflow==2.11.0
 scikit-learn
 numpy
 pandas
