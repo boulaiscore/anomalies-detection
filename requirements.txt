@@ -1,10 +1,9 @@
 Flask
-tensorflow==2.11.0
+prophet
 scikit-learn
 numpy
 pandas
 google-api-core==2.15.0
 google-cloud-language==2.12.0
-protobuf==3.19.6  # specificando questa versione per risolvere il conflitto
-setuptools>=65.5.0
-wheel>=0.40.0
+protobuf==3.19.6
+matplotlib
