@@ -1,5 +1,5 @@
 Flask
-tensorflow==2.10.0
+tensorflow==2.11.0  # Usa questa versione più recente per supporto protobuf
 scikit-learn
 numpy
 pandas
@@ -9,5 +9,5 @@ google-cloud-speech>=2.26.1,<2.27.0
 googleapis-common-protos>=1.62.0,<2.0.0
 proto-plus>=1.23.0,<2.0.0
 setuptools==65.5.0
-pip>=24.3
+pip>=24.3.0
 wheel>=0.40.0
