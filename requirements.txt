@@ -9,3 +9,4 @@ protobuf==3.19.6
 matplotlib
 openpyxl
 gunicorn==20.1.0
+plotly
