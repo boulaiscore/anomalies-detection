@@ -14,3 +14,4 @@ gunicorn
 statsmodels
 pymc3==3.11.2
 arviz==0.11.2
+mplcursors
